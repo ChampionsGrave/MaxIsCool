@@ -1,7 +1,6 @@
 from agents import Agent
 from samplemodel import ALiteralFuckingLlama
 from tool import time_tool
-import asyncio
 
 weird_form_but_univerisal = [
   {

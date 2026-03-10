@@ -1,4 +1,4 @@
-from agents import Agent, Runner
+from agents import Agent
 from samplemodel import ALiteralFuckingLlama
 from tool import time_tool
 import asyncio
@@ -20,9 +20,3 @@ The_llama = Agent(
 	model=ALiteralFuckingLlama,
 	tools = time_tool
 )
-runner = Runner()
-async def main():
-	llama_thoughts = runner.run(The_llama, "What time is it, fool?")
-	return llama_thoughts.final_output
-
-asyncio.run(main()) 
